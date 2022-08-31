@@ -12,11 +12,35 @@
 
 <body>
     <header>
-        <h1>Shearch Your Favorite Phoe</h1>
+        <h1 class="text-center my-5">Shearch Your Favorite Phoe</h1>
     </header>
     <main>
         <section>
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="searchField" type="text" class="form-control" placeholder="Search Youre Phone Name"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button id="btnSearch" class="btn btn-outline-secondary" type="button"
+                    id="button-addon2">Button</button>
+            </div>
+        </section>
+        <section class="container">
+            <div id="phone-container" class="row row-cols-1 row-cols-md-3 g-4">
 
+            </div>
+            <div id="worning" class="text-center my-5 d-none">
+                <h3 class=" text-warning">No Phone Found Please Enter a Right Phone Name</h3>
+            </div>
+            <div class="text-center my-lg-5">
+                <button class="btn btn-primary">SHOW ALL PHONES</button>
+            </div>
+
+        </section>
+        <section id="loading" class="d-none">
+            <div class="d-flex justify-content-center mt-lg-5">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
         </section>
 
     </main>
